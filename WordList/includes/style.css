@@ -1,0 +1,85 @@
+
+body{
+  background: linear-gradient(0deg, rgba(114, 114, 122, 0.3),rgba(121, 115, 115, 0.3)),
+  url("sea.jpg");
+
+  /*Photo by Magda Ehlers from Pexels*/
+  background-position:center;
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+  user-select: none;
+  background-size: cover;
+  text-align:center;
+}
+
+h1{
+  color:white;
+  font-size: calc(5vw + 4vh);
+  padding-bottom: 50px;
+}
+
+
+form{
+  margin:auto;
+  width: 30%;
+/*  border: solid;*/
+}
+
+input{
+  text-align: left;
+/*  border: solid;*/
+}
+
+.item{
+  text-align: left;
+  color: white;
+  font-size: 20px;
+}
+
+.item_text{
+  color: white;
+  font-size: 20px;
+}
+
+
+h2{
+  padding-top: 50px;
+  padding-bottom: 20px;
+  color:white;
+  font-size: calc(3vw + 2vh);
+}
+
+.feedback{
+  padding-top: 50px;
+  color:white;
+  font-size: 24px;
+}
+
+.hold_sentence{
+    display: flex;
+    align-items: center;
+  }
+
+  .word{
+    border: 1px grey solid;
+  }
+
+  .checky{
+    display:block;
+    border: 1px grey solid;
+  }
+
+
+  #back_button{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 10px;
+  }
+  
+  
+  #back_button img {
+    height:100px;
+    width: 100px;
+    border-radius: 20px;
+  }

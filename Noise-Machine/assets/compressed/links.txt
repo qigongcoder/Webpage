@@ -1,0 +1,47 @@
+name
+title
+logo
+link
+resampled at lower bit rate
+
+bell-tibetan-daniel-simon
+http://soundbible.com/2205-Bells-Tibetan-Large.html
+tibetan bell
+
+bell-zen-temple
+http://soundbible.com/1477-Zen-Temple-Bell.html
+Mike Koenig
+temple bell
+
+bluejay-call-mike-koenig
+http://soundbible.com/1843-Bluejay-Call-2.html
+blue jay
+
+crystal-glass
+http://soundbible.com/125-Crystal-Glass.html
+Mike Koenig 
+crystal glass
+
+distant-thunder
+http://soundbible.com/907-Distant-Thunder.html
+Mike Koenig 
+distant thunder
+
+gong-chinese-daniel_simon
+http://soundbible.com/2148-Chinese-Gong.html
+chinese gong
+
+gong-metal
+http://soundbible.com/128-Metal-Gong.html
+Mike Koenig
+metal gong
+
+rainforest
+http://soundbible.com/435-Rainforest.html
+Mike Koenig
+rainforest
+
+water-noise
+http://soundbible.com/1436-Water-Noise.html
+Caroline Ford
+water fall

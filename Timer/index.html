@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+  <html>
+
+    <head>
+      <title>
+        My Clock
+      </title>
+      <link type="text/css" rel="stylesheet" href="../normalize.css">
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <script  type="text/JavaScript" src="javascript.js"></script>
+    </head>
+
+    <body>
+
+      <div id="surrounding">
+
+        <div id="title" class="box-look"><p class="title_text">Pomodoro Clock</p></div>
+        <div id="time-left" class="box-look"><p>25:00</p></div>
+        <div id="timer-label" class="box-look"><p>session</p></div>
+        <div id="session-label" class="box-look"><p>session<br/>duration</p></div>
+        <div id="session-length" class="box-look"><p>25</p></div>
+        <button id="session-decrement" class="box-look button_change" onclick="sessionDecrease()"><p>&#9660;</p></button>
+        <button id="start_stop" class="box-look button_change" onclick="startStop()"><p>&#9654; / &#10074;&#10074;</p></button>
+        <button id="session-increment" class="box-look button_change" onclick="sessionIncrease()"><p>&#9650;</p></button>
+        <div id="break-label" class="box-look"><p>break<br/>duration</p></div>
+        <button id="break-decrement" class="box-look button_change" onclick="breakDecrease()"><p>&#9660;</p></button>
+        <div id="break-length" class="box-look"><p>5</p></div>
+        <button id="reset" class="box-look button_change" onclick="restart()"><p>&#x21bb;</p></button>
+        <button id="break-increment" class="box-look button_change" onclick="breakIncrease()"><p>&#9650;</p></button>
+
+      </div>
+
+      
+      <audio id="beep" preload="auto" src="https://goo.gl/65cBl1"></audio>
+      
+      <div id="back_button">
+        <a href="../index.html#FrontEndProjects"><img src="../assets/back_button.jpg"></a>
+      </div>
+  
+
+    </body>
+
+  </html>

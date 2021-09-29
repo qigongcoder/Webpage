@@ -1,0 +1,80 @@
+body{
+/*  background:url("assets/moutain_1920_911.jpg");
+  background:url("assets/nine.jpg");
+*/
+background: linear-gradient(0deg, rgba(114, 114, 122, 0.5),rgba(121, 115, 115, 0.5)),
+url("assets/nine.jpg");
+
+  background-position:center;
+  background-repeat:no-repeat;
+}
+
+p{
+  color: white;
+}
+
+#drum-machine{
+  width: 80vw;
+  height: 80vh;
+  margin: auto;
+  margin-top:5vh;
+}
+
+#title-container{
+  height: 20%;
+}
+
+h1{
+  color:white;
+  text-align: center;
+  font-size: calc(5vw + 4vh);
+  position: relative;
+  top: 20%;
+  transform: translateY(-50%)
+}
+
+
+#smaller-border{
+  height:80%;
+  text-align: center;
+}
+
+#display{
+  font-weight: bold;
+  font-size: calc(2vw + 2vh);
+  color: white;
+}
+
+.row{
+  height: 25%;
+}
+
+.drum-pad{
+  height: 100%;
+  width: 33.3%;
+  display: inline-block;
+  text-align: center;
+  user-select: none;
+  font-weight: bold;
+  font-size: calc(2vw + 2vh);
+  }
+
+  .drum-padbox:active {
+/*    background: darkgrey;*/
+  }
+  
+
+  #back_button{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 10px;
+  }
+  
+  
+  #back_button img {
+    height:100px;
+    width: 100px;
+    border-radius: 20px;
+  }
+  

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Noise Machine</title>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="../normalize.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script>
+
+      function quiet(){
+        var audio = document.getElementById('tibetan-bells');
+        audio.pause();
+        audio.currentTime = 0;
+
+        audio = document.getElementById('water');
+        audio.pause();
+        audio.currentTime = 0;
+
+        audio = document.getElementById('bluejay');
+        audio.pause();
+        audio.currentTime = 0;
+
+        audio = document.getElementById('crystal-glass');
+        audio.pause();
+        audio.currentTime = 0;
+
+        audio = document.getElementById('thunder');
+        audio.pause();
+        audio.currentTime = 0;
+
+        audio = document.getElementById('chinese-gong');
+        audio.pause();
+        audio.currentTime = 0;
+
+        audio = document.getElementById('metal-gong');
+        audio.pause();
+        audio.currentTime = 0;
+
+        audio = document.getElementById('rainforest');
+        audio.pause();
+        audio.currentTime = 0;
+      }
+
+
+/*
+Fade out - yet to work out how to fade all out simultaneously
+        if(audio.volume > 0.1){
+            audio.volume -= 0.1;
+            setTimeout(quiet, 100);
+        }else{
+            audio.pause();
+            audio.currentTime = 0;
+            audio.volume = 1;
+        }
+      }
+*/      
+
+    </script>
+
+  </head>
+
+  <body  onkeydown="keyUsage(event)">
+      <div id="drum-machine">
+
+      <div id="title-container">
+        <h1>Relaxing Sounds</h1>
+      </div>
+
+      <div id="smaller-border">
+
+        <div class="row">
+          <div id="display"><p>sound</p></div>
+        </div>
+
+        <div class="row">
+          <div class="drum-pad" onmousedown="document.getElementById('tibetan-bells').play();document.getElementById('display').textContent='tibetan bells';" >
+            <p>tibetan bells</p>
+            <audio id="tibetan-bells" class="clip" src="assets/compressed/bell-tibetan-daniel-simon.mp3" preload="auto"></audio>
+          </div><!--
+
+          --><div class="drum-pad" onmousedown="document.getElementById('water').play();document.getElementById('display').textContent='water';" >
+            <p>water</p>
+            <audio id="water" class="clip" src="assets/compressed/water-noise.mp3" preload="auto"></audio>
+          </div><!--
+
+          --><div class="drum-pad" onmousedown="document.getElementById('bluejay').play();document.getElementById('display').textContent='bluejay';" >
+            <p>bluejay</p>
+            <audio id="bluejay" class="clip" src="assets/compressed/bluejay-call-mike-koenig.mp3" preload="auto"></audio>
+          </div>
+        </div>
+    
+        <div class="row">
+          <div class="drum-pad" onmousedown="document.getElementById('crystal-glass').play();document.getElementById('display').textContent='crystal glass';" >
+            <p>crystal glass</p>
+            <audio id="crystal-glass" class="clip" src="assets/compressed/crystal-glass.mp3" preload="auto"></audio>
+          </div><!--
+
+          --><div class="drum-pad" onmousedown="document.getElementById('thunder').play();document.getElementById('display').textContent='thunder';">
+            <p>thunder</p>
+            <audio id="thunder" class="clip" src="assets/compressed/distant-thunder.mp3" preload="auto"></audio>
+          </div><!--
+
+          --><div class="drum-pad" onmousedown="document.getElementById('chinese-gong').play();document.getElementById('display').textContent='chinese gong';" >
+            <p>gong</p>
+            <audio id="chinese-gong" class="clip" src="assets/compressed/gong-chinese-daniel_simon.mp3" preload="auto"></audio>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="drum-pad" onmousedown="document.getElementById('metal-gong').play();document.getElementById('display').textContent='metal gong';" >
+            <p>metal gong</p>
+            <audio id="metal-gong" class="clip" src="assets/compressed/gong-metal.mp3" preload="auto"></audio>
+          </div><!--
+
+          --><div class="drum-pad" onmousedown="document.getElementById('rainforest').play();document.getElementById('display').textContent='rainforest';" >
+            <p>rainforest</p>
+            <audio id="rainforest" class="clip" src="assets/compressed/rainforest.mp3" preload="auto"></audio>
+          </div><!--
+
+          --><div class="drum-pad" onmousedown="quiet();document.getElementById('display').textContent='quiet';" >
+            <p>quiet</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div id="back_button">
+      <a href="../index.html#FrontEndProjects"><img src="../assets/back_button.jpg"></a>
+    </div>
+
+  </body>
+</html>

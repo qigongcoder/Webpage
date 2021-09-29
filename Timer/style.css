@@ -1,0 +1,138 @@
+
+body{
+  background: black;
+  background-image:url("pexels-skitterphoto-240040.jpg");
+  background-size: 100%;
+  background-position:center;
+  background-repeat:no-repeat;
+  user-select: none;
+}
+
+
+#surrounding{
+    height: 80vh;
+    width: 80vw;
+    margin: auto;
+    transform: translateY(5vh);
+    border-radius: 4vw;
+
+    display: grid;
+    grid-template-columns: repeat(7 ,1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas:
+      "title title title title title title title"
+      "time-left time-left time-left session-label session-label break-label break-label"
+      "time-left time-left time-left session-decrement session-increment break-decrement break-increment"      
+      "time-left time-left time-left session-length session-length break-length break-length"       
+      "timer-label timer-label timer-label start-stop start-stop reset reset";
+
+    }
+
+    .box-look{
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5vw;
+      border-style: solid;
+      border-width: 1px;
+      border-color: black;
+      background: rgb(231,237,230);
+      background: radial-gradient(circle, rgb(127, 129, 126,0.3) 0%, rgba(127,131,127,0.5) 64%);
+      width: 100%;
+      height: 100%;
+      font-size: calc(2vw + 2vh);
+
+    }
+
+    .button_change{
+      border-width: 6px;
+      border-top-style: none;
+      border-left-style: none;
+    }
+
+    .button_change:active{
+      border-width: 3px;
+      border-top-style: solid;
+      border-left-style: solid;
+      border-right-style:none;
+      border-bottom-style: none;
+
+    }
+    
+
+    #title{
+      grid-area: title;
+      font-size: calc(6vw + 6vh);
+
+    }
+
+    .title_text{
+      color: white;
+    }
+
+    #time-left{
+      grid-area: time-left;
+      font-size: calc(6vw + 6vh);
+    }
+
+    #timer-label{
+      grid-area: timer-label;
+      font-size: calc(2.2vw + 2.2vh);
+    }
+
+    #session-label{
+      grid-area: session-label;
+      font-size: calc(1.6vw + 1.6vh);
+    }
+
+    #session-length{
+      grid-area: session-length;
+    }
+
+    #session-decrement{
+      grid-area: session-decrement;
+    }
+
+    #start_stop{
+      grid-area: start-stop;
+    }
+
+    #session-increment{
+      grid-area: session-increment;
+    }
+
+    #break-label{
+      font-size: calc(1.6vw + 1.6vh);
+      grid-area: break-label;
+    }
+    
+    #break-decrement{
+      grid-area: break-decrement;
+    }
+
+    #break-length{
+      grid-area: break-length;
+    }
+
+    #reset{
+      grid-area: reset;
+    }
+
+    #break-increment{
+      grid-area: break-increment;
+    }
+
+
+    #back_button{
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      border-radius: 10px;
+    }
+    
+    
+    #back_button img {
+      height:100px;
+      width: 100px;
+      border-radius: 20px;
+    }

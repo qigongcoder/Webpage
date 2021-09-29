@@ -1,0 +1,92 @@
+
+body{
+
+  background: black;
+  background-image:url("sunset-1373171_1920.jpg");
+  background-position:center;
+  background-repeat:no-repeat;
+  user-select: none;
+}
+
+
+#big_border{
+  box-sizing: content-box;
+  height: 500px;
+  width: 800px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+#title-container{
+  height: 25%;
+}
+
+.title_text{
+  color: white;
+  text-align: center;
+  font-size: 60px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  }
+
+
+#small-box-container{
+  height:86%;
+  box-sizing: border-box;
+  border-radius: 9px;
+}
+
+
+.small-box{
+  color:white;
+  box-sizing: border-box;
+  text-align:center;
+  height: 50%;
+  padding-top: 2%;
+  border-radius: 9px;
+}
+
+
+.small_title_text{
+  color:white;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+textarea {
+  margin-top: 10px;
+  font-size: 15px;
+  font-family: arial;
+}
+
+#output-box{
+  font-size: 15px;
+  font-family: arial;
+  margin: 0 auto;
+  overflow: auto;
+  height: 150px;
+  width: 680px;
+  border: grey solid 1px;
+  text-align: left;
+  margin-top: 10px;
+  background-color: white;
+}
+
+#preview{
+  margin:left;
+}
+
+
+#back_button{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 10px;
+}
+
+
+#back_button img {
+  height:100px;
+  width: 100px;
+  border-radius: 20px;
+}
