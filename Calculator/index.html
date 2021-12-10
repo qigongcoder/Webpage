@@ -1,68 +1,69 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Calculator</title>
-    <meta charset="UTF-8">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400|VT323" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="../normalize.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
 
-  </head>
-    <body>
+<head>
+  <title>Calculator</title>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400|VT323" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="../normalize.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
 
-      <div id="title-container">
-        <h1>Calculator</h1>
-      </div>
+</head>
 
-      <section>
-        <table>
-          <tr>
-            <th id="display" colspan="4">0</th>
-          </tr>
+<body>
 
-          <tr>
-            <td><button class="butsmall" id="seven" onclick="press(7)">7</button></td>
-            <td><button class="butsmall" id="eight" onclick="press(8)">8</button></td>
-            <td><button class="butsmall" id="nine" onclick="press(9)">9</button></td>
-            <td><button class="butsmall" id="add" onclick="operation('add')">+</button></td>
-          </tr>
+  <a href="../index.html" id="back_button">
+    <img src="../assets/back_button.jpg" id="back_button_image">
+  </a>
 
-          <tr>
-            <td><button class="butsmall" id="four" onclick="press(4)">4</button></td>
-            <td><button class="butsmall" id="five" onclick="press(5)">5</button></td>
-            <td><button class="butsmall" id="six" onclick="press(6)">6</button></td>
-            <td><button class="butsmall" id="subtract" onclick="operation('sub')">-</button></td>            
-          </tr>
+  <div id="title-container">
+    <h1>Calculator</h1>
+  </div>
 
-          <tr>
-            <td><button class="butsmall" id="one" onclick="press(1)">1</button></td>
-            <td><button class="butsmall" id="two" onclick="press(2)">2</button></td>
-            <td><button class="butsmall" id="three" onclick="press(3)">3</button></td>
-            <td><button class="butsmall" id="multiply" onclick="operation('mul')">&times;</button></td>
-          </tr>
+  <section>
+    <table>
+      <tr>
+        <th id="display" colspan="4">0</th>
+      </tr>
 
-          <tr>
-            <td><button class="butsmall" id="zero" onclick="press(0)">0</button></td>
-            <td><button class="butsmall" id="decimal" onclick="decimal()">.</button></td>
-            <td><button class="butsmall" id="clear" onclick="blank()">C</button></td>
-            <td><button class="butsmall" id="divide" onclick="operation('div')">&divide;</button></td>
-          </tr>
+      <tr>
+        <td><button class="butsmall" id="seven" onclick="press(7)">7</button></td>
+        <td><button class="butsmall" id="eight" onclick="press(8)">8</button></td>
+        <td><button class="butsmall" id="nine" onclick="press(9)">9</button></td>
+        <td><button class="butsmall" id="add" onclick="operation('add')">+</button></td>
+      </tr>
 
-          <tr>
-            <td colspan=3><button class="butsmall" id="equals" onclick="equals()">=</button></td>
-            <td><button class="butsmall" id="neg" onclick="neg()">+/-</button></td>
+      <tr>
+        <td><button class="butsmall" id="four" onclick="press(4)">4</button></td>
+        <td><button class="butsmall" id="five" onclick="press(5)">5</button></td>
+        <td><button class="butsmall" id="six" onclick="press(6)">6</button></td>
+        <td><button class="butsmall" id="subtract" onclick="operation('sub')">-</button></td>
+      </tr>
 
-          </tr>
+      <tr>
+        <td><button class="butsmall" id="one" onclick="press(1)">1</button></td>
+        <td><button class="butsmall" id="two" onclick="press(2)">2</button></td>
+        <td><button class="butsmall" id="three" onclick="press(3)">3</button></td>
+        <td><button class="butsmall" id="multiply" onclick="operation('mul')">&times;</button></td>
+      </tr>
 
-        </table>
-      </section>
+      <tr>
+        <td><button class="butsmall" id="zero" onclick="press(0)">0</button></td>
+        <td><button class="butsmall" id="decimal" onclick="decimal()">.</button></td>
+        <td><button class="butsmall" id="clear" onclick="blank()">C</button></td>
+        <td><button class="butsmall" id="divide" onclick="operation('div')">&divide;</button></td>
+      </tr>
 
-      <div id="back_button">
-        <a href="../index.html#FrontEndProjects"><img src="../assets/back_button.jpg"></a>
-      </div>
+      <tr>
+        <td colspan=3><button class="butsmall" id="equals" onclick="equals()">=</button></td>
+        <td><button class="butsmall" id="neg" onclick="neg()">+/-</button></td>
 
-      <script type="text/javascript" src="js.js"></script>
-    </body>
-  
-  </html>
+      </tr>
+
+    </table>
+  </section>
+
+  <script type="text/javascript" src="js.js"></script>
+</body>
+
+</html>

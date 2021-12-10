@@ -1,128 +1,70 @@
-
-body{
-  background: linear-gradient(0deg, rgba(114, 114, 122, 0.3),rgba(121, 115, 115, 0.3)),
-  url("stars.jpg");
-  background-position:center;
-  background-repeat:no-repeat;
+body {
+  background: linear-gradient(0deg, rgba(114, 114, 122, 0.3), rgba(121, 115, 115, 0.3)),
+    url("stars.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
   background-attachment: fixed;
   user-select: none;
-  background-size: 100%;
-  text-align:center;
+  background-size: cover;
+  text-align: center;
 }
 
-h1{
-  color:white;
-  font-size: calc(5vw + 4vh);
-  padding-bottom: 50px;
-}
 
-h1{
-  color:white;
-  font-size: calc(3vw + 2vh);
+h1 {
+  color: white;
+  font-size: 60px;
   padding-bottom: 30px;
 }
 
 
-p{
+p {
   padding: 20px;
 }
 
-header > h1{
+header>h1 {
   border-bottom: 1px dashed black;
-  font-style: italic ;
+  font-style: italic;
   font-size: x-large;
 }
 
-footer > p{
+footer>p {
   border-top: 1px dashed black;
   font-style: italic;
 }
 
 table {
-  border-spacing:5px;
-  width:530px;
+  border-spacing: 5px;
   margin: auto;
 }
 
 th {
-  color:#FFF;
-  background:#000;
-  text-align:left;
+  color: #FFF;
+  background: #000;
+  text-align: left;
 }
 
 td {
-  border-bottom:1px solid black;
-  background:#F0F0F0;
-  padding:3px;
-  text-align:left;
-  vertical-align:top;
+  border-bottom: 1px solid black;
+  background: #F0F0F0;
+  padding: 3px;
+  text-align: left;
+  vertical-align: top;
 }
 
 p#err_msg {
-  color:#F00;
-  font-weight:bold;
+  color: #F00;
+  font-weight: bold;
 }
 
-
-/*
-h1{
-  color:white;
-  font-size: calc(5vw + 4vh);
-  padding-bottom: 50px;
+#back_button {
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  z-index: 1;
 }
 
-form{
-  margin:auto;
-  width: 30%;
+#back_button_image {
+  height: 70px;
+  width: 70px;
+  border-radius: 10px;
 }
-
-input{
-  text-align: left;
-}
-
-.item{
-  text-align: left;
-  color: white;
-  font-size: 20px;
-}
-
-.item_text{
-  color: white;
-  font-size: 20px;
-}
-
-
-h2{
-  padding-top: 50px;
-  padding-bottom: 20px;
-  color:white;
-  font-size: calc(3vw + 2vh);
-}
-
-.feedback{
-  padding-top: 50px;
-  color:white;
-  font-size: 24px;
-}
-
-*/
-
-  #back_button{
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    border-radius: 10px;
-  }
-  
-  
-  #back_button img {
-    height:100px;
-    width: 100px;
-    border-radius: 20px;
-  }
-
-
-
-
-
-

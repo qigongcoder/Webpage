@@ -44,27 +44,19 @@
       }
 
 
-/*
-Fade out - yet to work out how to fade all out simultaneously
-        if(audio.volume > 0.1){
-            audio.volume -= 0.1;
-            setTimeout(quiet, 100);
-        }else{
-            audio.pause();
-            audio.currentTime = 0;
-            audio.volume = 1;
-        }
-      }
-*/      
-
     </script>
 
   </head>
 
   <body  onkeydown="keyUsage(event)">
+
+    <a href="../index.html" id="back_button">
+      <img src="../assets/back_button.jpg" id="back_button_image">
+    </a>
+
       <div id="drum-machine">
 
-      <div id="title-container">
+        <div id="title-container">
         <h1>Relaxing Sounds</h1>
       </div>
 
@@ -103,7 +95,7 @@ Fade out - yet to work out how to fade all out simultaneously
           </div><!--
 
           --><div class="drum-pad" onmousedown="document.getElementById('chinese-gong').play();document.getElementById('display').textContent='chinese gong';" >
-            <p>gong</p>
+            <p>chinese gong</p>
             <audio id="chinese-gong" class="clip" src="assets/compressed/gong-chinese-daniel_simon.mp3" preload="auto"></audio>
           </div>
         </div>
@@ -126,10 +118,6 @@ Fade out - yet to work out how to fade all out simultaneously
 
       </div>
 
-    </div>
-
-    <div id="back_button">
-      <a href="../index.html#FrontEndProjects"><img src="../assets/back_button.jpg"></a>
     </div>
 
   </body>

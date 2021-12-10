@@ -21,7 +21,7 @@ echo '<form action="post_action.php" method="post" accept-charset="utf-8">
 <p><input name="submit" type="submit" value="Submit"></p></form>';
 
 # Create navigation links.
-echo '<p><a href="forum.php">Forum</a> | <a href="goodbye.php">Logout</a></p>' ;
+echo '<p><a href="forum.php">Forum</a> | <a href="../goodbye.php">Logout</a></p>' ;
 
 # Display footer section.
 include ( '../includes/footerWEB.html' ) ;

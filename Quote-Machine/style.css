@@ -1,58 +1,60 @@
-
-body{
+body {
   background: black;
-  background-image:url("moutains.jpg");
+  background-image: url("moutains.jpg");
   /*Photo by Alessandro Sacchi on Unsplash*/
-  background-position:center;
-  background-repeat:no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   user-select: none;
 }
 
 
-p{
+p {
   color: white;
 }
 
-#title-container{
+#title-container {
   height: 20%;
 }
 
-h1{
+h1 {
   font-family: "Arial", Tahoma, Verdana;
-	color:white;
+  color: white;
   text-align: center;
-  font-size: calc(5vw + 4vh);
+  /*  font-size: calc(5vw + 4vh);*/
+  font-size: 80px;
   position: relative;
   top: 20%;
 }
 
 
-#text{
-  display:flex;
+#text {
+  display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   font-family: "Courier New", Courier, monospace;
   font-size: 40px;
   font-weight: 700;
-  color:white;
-  text-align:center;
+  color: white;
+  text-align: center;
   height: 200px;
 }
 
-#author{
-  color:white;
-  text-align:center;
+#author {
+  color: white;
+  text-align: center;
   font-style: italic;
   font-size: 30px;
   margin-top: 20px;
-  padding-left:50%;
+  padding-left: 50%;
 }
 
-#new_quote{
+#new_quote {
   background: black;
   color: white;
   font-size: 20px;
-  text-align:center;
+  text-align: center;
   margin: auto;
   margin-top: 120px;
   padding: 10px;
@@ -61,27 +63,54 @@ h1{
 }
 
 
+#back_button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1;
+}
+
+
+#back_button_image {
+  height: 60px;
+  width: 60px;
+  border-radius: 10px;
+}
+
+
 @media only screen and (max-width: 1000px) {
-  #text{
+  h1 {
+    font-size: 70px;
+  }
+
+  #text {
     font-size: 35px;
   }
-  #author{
+
+  #author {
     font-size: 25px;
   }
-  #new_quote{
+
+  #new_quote {
     font-size: 18px;
     margin-top: 115px;
   }
 }
 
 @media only screen and (max-width: 850px) {
-  #text{
+  h1 {
+    font-size: 70px;
+  }
+
+  #text {
     font-size: 35px;
   }
-  #author{
+
+  #author {
     font-size: 25px;
   }
-  #new_quote{
+
+  #new_quote {
     font-size: 18px;
     margin-top: 100px;
     width: 40%;
@@ -89,29 +118,35 @@ h1{
 }
 
 @media only screen and (max-width: 650px) {
-  #text{
-    font-size: 30px;
+  h1 {
+    font-size: 25px;
   }
-  #author{
+
+  #text {
     font-size: 20px;
   }
-  #new_quote{
-    font-size: 18px;
+
+  #author {
+    font-size: 15px;
+  }
+
+  #new_quote {
+    font-size: 15px;
     margin-top: 75px;
     width: 50%;
   }
-}
 
-#back_button{
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  border-radius: 10px;
-}
+  #back_button {
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+  }
 
 
-#back_button img {
-  height:100px;
-  width: 100px;
-  border-radius: 20px;
+  #back_button_image {
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+  }
+
 }
